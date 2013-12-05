@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @t_shirt.title %>
+</p>
+
+<p>
+  <strong>T-shirt:</strong>
+  <%= @t_shirt.t-shirt_id %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @t_shirt.description %>
+</p>
+
+<%= link_to 'Edit', edit_t_shirt_path(@t_shirt) %> |
+<%= link_to 'Back', t_shirts_path %>

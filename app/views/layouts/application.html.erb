@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TshirtWeb</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="header">
+		<div id="logo">Hola</div>
+		<div id="nav_menu">
+			<div>Home</div>
+			<div>About</div>
+			<div>Contact</div>
+		</div>
+	</div>
+
+<%= yield %>
+
+</body>
+</html>
