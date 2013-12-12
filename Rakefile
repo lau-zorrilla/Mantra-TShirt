@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-TshirtWeb::Application.load_tasks
+MantraT::Application.load_tasks

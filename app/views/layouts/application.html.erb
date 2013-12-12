@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TshirtWeb</title>
+  <title>MantraT</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div id="header">
-		<div id="logo">Hola</div>
-		<div id="nav_menu">
-			<div>Home</div>
-			<div>About</div>
-			<div>Contact</div>
-		</div>
-	</div>
-
+  <div id="container">
+    <div id="header">
+  	  <div id="logo"></div>
+      <div id="navbar"></div>
+    </div>
+    <div id="main">
 <%= yield %>
-
+    </div>
+    <div id="footer">
+	    <p>Copyright@LauraZorrilla2013</p>
+    </div>
+  </div>
 </body>
 </html>

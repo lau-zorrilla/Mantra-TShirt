@@ -11,3 +11,127 @@
  *= require_self
  *= require_tree .
  */
+
+/* Reset {{{
+***********************************************************
+* reset.css from Eric Meyer
+* http://ericmeyerweb.com/
+***********************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/***********************************************************/
+/* END Eric Meyer reset.css }}} */
+/* Body {{{ */
+body {
+    font-family:
+    "Arial",
+    "Helvetica",
+    "Verdana",
+    "Geneva",
+    sans-serif;
+    font-size: 12pt;
+    margin: auto;
+    background-image: url(headerBk.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+/* }}} */
+#container{
+	width: 800px;
+    border: 1px solid black;
+    margin: auto;	
+}
+#header{
+    height: 115;
+}
+#logo{
+    width: 284px;
+    height: 107px;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    margin: auto;
+}
+#navbar{
+	width: 600px;
+    height: 1px;
+    background-color: #000;
+    margin: auto;
+}
+#footer{
+	width: 802px;
+	height: 46px;
+    background-image: url(footer.png);
+}
+#footer p{
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-left: 20px;
+	color: white;
+}
+/***********************************************************/
+/* INDEX {{{ */ 
+.cutout{
+	width: 150px;
+	border: 1px solid green;
+	margin-top: 50px;
+	margin-left: 40px;
+	display: inline-block;
+}
+.cutout p{
+	text-align: center;
+}
+.blackLine{
+	width: 100px;
+    height: 1px;
+    background-color: #000;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#name{
+    font-size: 14pt;	
+}
+#description{
+	text-align: left;
+}
+/*}}}*/
