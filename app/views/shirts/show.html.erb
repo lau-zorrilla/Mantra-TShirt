@@ -1,14 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @shirt.name %>
-</p>
+<div id="showContainer">
+  <p id="shirtName">
+    <%= @shirt.name %>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @shirt.description %>
-</p>
+  <p id="shirtImage">
+    <%= image_tag @shirt.image.url(:medium) %>
+  </p>
 
-<%= link_to 'Edit', edit_shirt_path(@shirt) %> |
-<%= link_to 'Back', shirts_path %>
+  <p id="shirtDescription">
+    DESCRIPTION: <%= @shirt.description %>
+  </p>
+</div>
+
+<div id="showButtons">
+  <p><%= link_to 'Edit', edit_shirt_path(@shirt) %> | <%= link_to 'Back', shirts_path %></p>
+</div>

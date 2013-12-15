@@ -1,6 +1,8 @@
 <table>
   <thead>
     <tr>
+	  <th></th>
+	  <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -9,15 +11,17 @@
 
   <tbody>
     <% @shirts.each do |shirt| %>
-      <div class="cutout">
+      <div class="cutout">	    
         <p id="name"><%= shirt.name %></p>
         <div class="blackLine"></div>
-        <div><%= shirt.image %></div>
+        <div id="image"><%= image_tag shirt.image.url(:thumb) %></div>
         <div class="blackLine"></div>
-        <p id="description"><%= shirt.description %></p>
-        <%= link_to 'Show', shirt %>
+        <p id="description"><%= shirt.description.truncate(20) %></p>
+        <div id="menu">
+		<%= link_to 'Show', shirt %>
         <%= link_to 'Edit', edit_shirt_path(shirt) %>
         <%= link_to 'Destroy', shirt, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
      </div>
 
     <% end %>
@@ -25,5 +29,6 @@
 </table> 
 
 <br>
-
+<div id="newShirt">
 <%= link_to 'New Shirt', new_shirt_path %>
+</div>

@@ -2,3 +2,139 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/***********************************************************/
+/* INDEX {{{ */ 
+.cutout{
+	width: 150px;
+/*	border: 1px solid black;*/
+	margin-top: 50px;
+	margin-left: 40px;
+	display: inline-block;
+}
+.cutout p{
+	text-align: center;
+}
+.blackLine{
+	width: 100px;
+    height: 1px;
+    background-color: #000;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#name{
+    font-size: 14pt;
+	padding-bottom: 10px;
+}
+#image{
+	text-align: center;
+}
+#description{
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+#menu{
+	width: 121px;
+	margin: auto;
+}
+#newShirt{
+	width:80px;
+	margin: auto;
+	margin-top: 20px;
+	font-weight: bold;
+}
+/*}}}*/
+/***********************************************************/
+/* FORM {{{ */ 
+#fName{
+/*	border: 1px solid green;*/
+	padding-top: 20px;
+}
+#fDescription{
+/*	border: 1px solid red;*/
+	padding-top: 20px;
+}
+#fImage{
+	padding-top: 20px;
+/*	border: 1px solid blue;	*/
+}
+#fSubmit{
+	width: 85px;
+	margin: auto;
+}
+
+/*}}}*/
+/***********************************************************/
+/* SHOW {{{ */ 
+#showContainer{
+	width: 550px;
+	margin: auto;
+	margin-top: 20px;
+}
+#showContainer p{
+	margin-top: 20px;
+	text-align: center;
+}
+#shirtName{
+	font-size: 20pt;
+}
+#shirtImage{
+	text-align: center;
+}
+#showButtons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#showButtons p{
+	width: 80px;
+	margin: auto;
+	font-weight: bold;
+}
+/*}}}*/
+/***********************************************************/
+/* EDIT {{{ */ 
+#editContainer{
+	width: 300px;
+	margin: auto;
+	margin-top: 20px;
+}
+#editContainer h1{
+	margin: auto;
+	font-size: 20pt;
+}
+#editForm{
+	margin-top: 20px;
+	font-size: 14pt;
+}
+#editLinks{
+	width: 100px;
+	margin: auto;
+	font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*}}}*/
+/***********************************************************/
+/* NEW {{{ */ 
+#newContainer{
+	width: 300px;
+	margin: auto;
+	margin-top: 20px;
+}
+#newContainer h1{
+	margin: auto;
+	font-size: 20pt;
+}
+#newForm{
+	margin-top: 20px;
+	font-size: 14pt;
+}
+#newLinks{
+	width: 100px;
+	margin: auto;
+	font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*}}}*/

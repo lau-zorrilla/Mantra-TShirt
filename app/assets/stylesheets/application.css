@@ -108,30 +108,3 @@ body {
 	padding-left: 20px;
 	color: white;
 }
-/***********************************************************/
-/* INDEX {{{ */ 
-.cutout{
-	width: 150px;
-	border: 1px solid green;
-	margin-top: 50px;
-	margin-left: 40px;
-	display: inline-block;
-}
-.cutout p{
-	text-align: center;
-}
-.blackLine{
-	width: 100px;
-    height: 1px;
-    background-color: #000;
-    margin: auto;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-#name{
-    font-size: 14pt;	
-}
-#description{
-	text-align: left;
-}
-/*}}}*/

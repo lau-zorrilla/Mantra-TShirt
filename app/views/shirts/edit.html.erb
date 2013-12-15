@@ -1,6 +1,11 @@
-<h1>Editing shirt</h1>
+<div id="editContainer">
+  <h1>Edit shirt:</h1>
 
-<%= render 'form' %>
+  <div id="editForm">
+    <%= render 'form' %>
+  </div>
 
-<%= link_to 'Show', @shirt %> |
-<%= link_to 'Back', shirts_path %>
+  <div id="editLinks">
+    <%= link_to 'Show', @shirt %> | <%= link_to 'Back', shirts_path %>
+  </div>
+</div>
