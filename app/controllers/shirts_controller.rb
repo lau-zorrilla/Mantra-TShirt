@@ -1,5 +1,6 @@
 class ShirtsController < ApplicationController
   before_action :set_shirt, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_admin!, except: [:show, :index]
 
   # GET /shirts
   # GET /shirts.json

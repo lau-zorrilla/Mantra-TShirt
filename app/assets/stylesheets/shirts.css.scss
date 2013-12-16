@@ -4,12 +4,6 @@
 
 /***********************************************************/
 /* INDEX {{{ */ 
-#admin_nav{
-    width: 100px;
-    float: right;
-    margin-right: 50px;
-    margin-top: 10px;
-}
 .cutout{
 	width: 150px;
 	margin-top: 50px;
@@ -51,7 +45,7 @@
 }
 /*}}}*/
 /***********************************************************/
-/* FORM {{{ */ 
+/* FORM SHIRT {{{ */ 
 #fName{
 /*	border: 1px solid green;*/
 	padding-top: 20px;
@@ -71,7 +65,7 @@
 
 /*}}}*/
 /***********************************************************/
-/* SHOW {{{ */ 
+/* SHOW SHIRT {{{ */ 
 #showContainer{
 	width: 550px;
 	margin: auto;
@@ -98,21 +92,21 @@
 }
 /*}}}*/
 /***********************************************************/
-/* EDIT {{{ */ 
-#editContainer{
+/* EDIT SHIRT {{{ */ 
+.Container{
 	width: 300px;
 	margin: auto;
 	margin-top: 20px;
 }
-#editContainer h1{
+.Container h1{
 	margin: auto;
 	font-size: 20pt;
 }
-#editForm{
+.Show{
 	margin-top: 20px;
 	font-size: 14pt;
 }
-#editLinks{
+.Links{
 	width: 100px;
 	margin: auto;
 	font-weight: bold;
@@ -121,21 +115,19 @@
 }
 /*}}}*/
 /***********************************************************/
-/* NEW {{{ */ 
-#newContainer{
-	width: 300px;
-	margin: auto;
-	margin-top: 20px;
+/* NEW ADMIN {{{ */ 
+.adminInfo{
+	margin-bottom: 20px;
 }
-#newContainer h1{
+.Container h1{
 	margin: auto;
 	font-size: 20pt;
 }
-#newForm{
+.Show{
 	margin-top: 20px;
 	font-size: 14pt;
 }
-#newLinks{
+.Links{
 	width: 100px;
 	margin: auto;
 	font-weight: bold;
@@ -144,31 +136,4 @@
 }
 /*}}}*/
 /***********************************************************/
-/* NEW {{{ */ 
-#newAdminContainer{
-	width: 300px;
-	margin: auto;
-	margin-top: 20px;
-}
-#newAdminContainer h1{
-	margin: auto;
-	font-size: 20pt;
-	padding-bottom: 20px;
-}
-#newAdminContainer p{
-	margin: auto;
-	padding-bottom: 20px;
-}
-#newForm{
-	margin-top: 20px;
-	font-size: 14pt;
-}
-#newAdminLinks{
-	width: 100px;
-	margin: auto;
-	font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-/*}}}*/
 
