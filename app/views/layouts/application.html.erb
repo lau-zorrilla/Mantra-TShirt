@@ -5,14 +5,26 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
   <div id="container">
     <div id="header">
   	  <div id="logo"></div>
       <div id="navbar"></div>
     </div>
     <div id="main">
+      <div id="admin_nav">
+        <% if admin_signed_in? %>
+          Conectado como <%= current_admin.email %>. No eres t&uacute;?
+          <%= link_to "Log off", destroy_admin_session_path, :method => :delete%>
+        <% else %>
+          <%= link_to "Log up", new_admin_registration_path %> o
+          <%= link_to "Log in", new_admin_session_path %>
+        <% end %>
+      </div>
 <%= yield %>
     </div>
     <div id="footer">

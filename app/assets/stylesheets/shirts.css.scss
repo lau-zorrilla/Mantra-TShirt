@@ -4,9 +4,14 @@
 
 /***********************************************************/
 /* INDEX {{{ */ 
+#admin_nav{
+    width: 100px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+}
 .cutout{
 	width: 150px;
-/*	border: 1px solid black;*/
 	margin-top: 50px;
 	margin-left: 40px;
 	display: inline-block;
@@ -138,3 +143,32 @@
     margin-bottom: 20px;
 }
 /*}}}*/
+/***********************************************************/
+/* NEW {{{ */ 
+#newAdminContainer{
+	width: 300px;
+	margin: auto;
+	margin-top: 20px;
+}
+#newAdminContainer h1{
+	margin: auto;
+	font-size: 20pt;
+	padding-bottom: 20px;
+}
+#newAdminContainer p{
+	margin: auto;
+	padding-bottom: 20px;
+}
+#newForm{
+	margin-top: 20px;
+	font-size: 14pt;
+}
+#newAdminLinks{
+	width: 100px;
+	margin: auto;
+	font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*}}}*/
+

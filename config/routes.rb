@@ -1,4 +1,5 @@
 MantraT::Application.routes.draw do
+  devise_for :admins
   resources :shirts
 
   # The priority is based upon order of creation: first created -> highest priority.
