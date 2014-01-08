@@ -5,7 +5,7 @@ class ShirtsController < ApplicationController
   # GET /shirts
   # GET /shirts.json
   def index
-    @shirts = Shirt.all
+    @shirts = Shirt.paginate(:page => params[:page], :per_page => 8)
   end
 
   # GET /shirts/1
