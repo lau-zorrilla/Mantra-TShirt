@@ -14,11 +14,11 @@
   	  <div id="logo"></div>
       <div id="admin_nav">
         <% if admin_signed_in? %>
-         Conected as <%= current_admin.email %>. Not you t&uacute;?
-          <%= link_to "Log off", destroy_admin_session_path, :method => :delete%>
+           Conectado como <%= current_admin.email %>. No eres t&uacute;?
+          <%= link_to "Salir", destroy_admin_session_path, :method => :delete%>
         <% else %>
-          <%= link_to "Sign up", new_admin_registration_path %> |
-          <%= link_to "Sign in", new_admin_session_path %>
+          <%= link_to "Crear", new_admin_registration_path %> |
+          <%= link_to "Entrar", new_admin_session_path %>
         <% end %>
       </div>
       <div id="navbar"></div>

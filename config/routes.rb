@@ -1,12 +1,13 @@
 MantraT::Application.routes.draw do
   devise_for :admins
   resources :shirts
-
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
    root 'shirts#index'
+   get '/:locale' => 'shirts#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -58,4 +59,8 @@ MantraT::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  scope "/:locale" do
+    resources :books
+  end
 end
