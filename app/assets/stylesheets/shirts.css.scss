@@ -38,9 +38,10 @@
 	margin: auto;
 }
 #newShirt{
-	width: 80px;
+	width: 120px;
 	margin: auto;
 	margin-top: 20px;
+	margin-bottom: 20px;
 	font-weight: bold;
 }
 #paginate{
@@ -61,7 +62,12 @@
 }
 #fImage{
 	padding-top: 20px;
-/*	border: 1px solid blue;	*/
+	padding-bottom: 20px;
+/*	border: 1px solid blue;*/
+}
+#formContainer p{
+	margin-bottom: 5px;
+	font-size: 14pt;
 }
 #fSubmit{
 	width: 85px;
@@ -91,7 +97,7 @@
     margin-bottom: 20px;
 }
 #showButtons p{
-	width: 80px;
+	width:100px;
 	margin: auto;
 	font-weight: bold;
 }
@@ -112,9 +118,9 @@
 	font-size: 14pt;
 }
 .Links{
-	width: 100px;
 	margin: auto;
 	font-weight: bold;
+	text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }

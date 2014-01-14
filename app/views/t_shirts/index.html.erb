@@ -1,11 +1,9 @@
-<h1>Listing t_shirts</h1>
-
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>T-shirt</th>
-      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -18,9 +16,9 @@
         <td><%= t_shirt.title %></td>
         <td><%= t_shirt.t-shirt_id %></td>
         <td><%= t_shirt.description %></td>
-        <td><%= link_to 'Show', t_shirt %></td>
-        <td><%= link_to 'Edit', edit_t_shirt_path(t_shirt) %></td>
-        <td><%= link_to 'Destroy', t_shirt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('show'), t_shirt %></td>
+        <td><%= link_to t('edit'), edit_t_shirt_path(t_shirt) %></td>
+        <td><%= link_to t'destroy'), t_shirt, method: :delete, data: { confirm: t('sure' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New T shirt', new_t_shirt_path %>
+<%= link_to t('new_shirt'), new_t_shirt_path %>

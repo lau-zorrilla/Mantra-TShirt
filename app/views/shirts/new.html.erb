@@ -1,10 +1,10 @@
 <div class="Container">
-  <h1>Create New Shirt:</h1>
+  <h1><% t('create') %></h1>
 
   <div class="Show">
     <%= render 'form' %>
   </div>
   <div class="Links">
-    <%= link_to 'Back', shirts_path %>
+    <%= link_to t('back'), shirts_path %>
   </div>
 </div>

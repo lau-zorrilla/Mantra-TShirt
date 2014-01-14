@@ -1,11 +1,11 @@
 <div class="Container">
-  <h1>Edit shirt:</h1>
+  <h1><% t('edit_shirt') %></h1>
 
   <div class="Show">
     <%= render 'form' %>
   </div>
 
   <div class="Links">
-    <%= link_to 'Show', @shirt %> | <%= link_to 'Back', shirts_path %>
+    <%= link_to t('show'), @shirt %> | <%= link_to t('back'), shirts_path %>
   </div>
 </div>

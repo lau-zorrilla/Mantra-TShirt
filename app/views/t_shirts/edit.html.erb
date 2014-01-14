@@ -1,6 +1,6 @@
-<h1>Editing t_shirt</h1>
+<h1><%= t('edit_shirt') %></h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @t_shirt %> |
-<%= link_to 'Back', t_shirts_path %>
+<%= link_to t('show'), @t_shirt %> |
+<%= link_to t('back'), t_shirts_path %>

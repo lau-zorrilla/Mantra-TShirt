@@ -10,10 +10,10 @@
   </p>
 
   <p id="shirtDescription">
-    DESCRIPTION: <%= @shirt.description %>
+    <% t('description') %><%= @shirt.description %>
   </p>
 </div>
 
 <div id="showButtons">
-  <p><%= link_to 'Edit', edit_shirt_path(@shirt) %> | <%= link_to 'Back', shirts_path %></p>
+  <p><%= link_to t('edit'), edit_shirt_path(@shirt) %> | <%= link_to t('back'), shirts_path %></p>
 </div>

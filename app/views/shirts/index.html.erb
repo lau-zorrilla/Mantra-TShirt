@@ -11,29 +11,31 @@
 
   <tbody>
     <% @shirts.each do |shirt| %>
-      <div class="cutout">	    
+      <div class="cutout">      
         <p id="name"><%= shirt.name %></p>
         <div class="blackLine"></div>
         <div id="image"><%= image_tag shirt.image.url(:thumb) %></div>
         <div class="blackLine"></div>
         <p id="description"><%= shirt.description.truncate(20) %></p>
         <div id="menu">
-		<%= link_to 'Show', shirt %>
-		<% if admin_signed_in? %>
-        <%= link_to 'Edit', edit_shirt_path(shirt) %>
-        <%= link_to 'Destroy', shirt, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to t('show'), shirt %>
+    <% if admin_signed_in? %>
+        </br><%= link_to t('edit'), edit_shirt_path(shirt) %>
+        </br><%= link_to t('destroy'), shirt, method: :delete, data: { confirm: 'Are you sure?' } %>
        <% end %>
         </div>
      </div>
 
     <% end %>
-    <div id="paginate"><%= will_paginate @shirts %></div>
+    <div id="paginate"><%= will_paginate @shirts,
+                        :previous_label => t("will_paginate.previous_label"),
+                        :next_label     => t("will_paginate.next_label")%></div>
   </tbody>
 </table> 
 
 <br>
 <div id="newShirt">
 <% if admin_signed_in? %>
-<%= link_to 'New Shirt', new_shirt_path %>
+<%= link_to t('new_shirt'), new_shirt_path %>
 <% end %>
 </div>

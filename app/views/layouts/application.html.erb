@@ -10,22 +10,22 @@
 <body>
   <div id="container">
     <div id="header">
-      <div id="homeButton"><%= link_to "HOME", root_path %></div>
-  	  <div id="logo"></div>
-      <div id="admin_nav">
+      <div id="homeButton" class="noDecoration"><%= link_to t('home'), root_path %></div>
+      <div id="logo"></div>
+      <div id="admin_nav" class="noDecoration">
         <% if admin_signed_in? %>
-         Conected as <%= current_admin.email %>. Not you t&uacute;?
-          <%= link_to "Log off", destroy_admin_session_path, :method => :delete%>
+          Connected as <%= current_admin.email %>. Not you t&uacute;?
+          <%= link_to t('log_off'), destroy_admin_session_path, :method => :delete%>
         <% else %>
-          <%= link_to "Sign up", new_admin_registration_path %> |
-          <%= link_to "Sign in", new_admin_session_path %>
+          <%= link_to t('sign_up'), new_admin_registration_path %> |
+          <%= link_to t('sign_in'), new_admin_session_path %>
         <% end %>
       </div>
       <div id="navbar"></div>
     </div>
-    <div id="main">
-	  <p class="notice"><%= notice %></p>
-	  <p class="alert"><%= alert %></p>
+    <div id="main"  class="noDecoration">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 <%= yield %>
     </div>
     <div id="footer">
@@ -34,3 +34,4 @@
   </div>
 </body>
 </html>
+

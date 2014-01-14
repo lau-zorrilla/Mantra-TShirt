@@ -1,0 +1,53 @@
+es:
+  new_shirt: Nueva Camiseta
+  edit: Editar
+  destroy: Eliminar
+  show: Mostrar
+  log_off: Salir
+  sign_up: Registrarse
+  sign_in: Entrar
+  home: Principal
+  back: Atras
+  create: Crear Nueva Camiseta
+  description: DESCRIPCION
+  edit_shirt: Editar Camiseta
+  will_paginate:
+    page_gap: "&hellip;"
+    previous_label: "Anterior"
+    next_label: "Siguiente"
+  forgot: Olvido su contraseña?
+  confirmation_instructions: No ha recibido instrucciones de confirmacion?
+  unlock_instructions: No ha recibido instrucciones para desbloquear su cuenta?
+  sign_in_with: Entrar con
+  we_need: necesitamos tu contraseña actual para confirmar los cambios
+  update: Actualizar
+  cancel_account: Cancelar mi cuenta
+  sure: Estas seguro?
+  resend_unlock_instructions: Reenviar instrucciones de desbloqueo
+  Send_reset_instructions: Enviame instrucciones para cambiar mi contrasña
+  new_password: Nueva contraseña
+  confirm_new_password: Confirmar nueva contraseña
+  change_password: cambiar mi contraseña
+  link_to_password: Someone has requested a link to change your password. You can do this through the link below.
+  hello: Hola
+  unlock_account: desbloquear mi cuenta
+  didnt_request: Si no has sido tu ignora este email.
+  create_new_password: Tu contraseña no cambiara hasta que active el link a continuacion y crees una nueva contraseña
+  link_unlock_account: Haz click en el link a continuacion para desbloquear tu cuenta
+  account_locked: Tu cuenta ha sido bloqueada debido un numero excesivo de intentos fallidos de acceder a ella.
+  link_unlock_account: Haz click en el link a continuacion para desbloquear tu cuenta
+  welcome: Bienvenido
+  confirm_account_email: Puedes confirmar tu cuenta de correo a traves del link a continuacion
+  confirm_account: Confirmar mi cuenta
+  resend_confirmation_instructions: Reenviar instrucciones de confirmacion
+  activerecord:
+    models:
+      user: Usuario
+    attributes:
+      user:
+        login: Entrar
+        email: Correo Electronico
+        encrypted_password: Contraseña
+
+
+

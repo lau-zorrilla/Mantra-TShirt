@@ -42,4 +42,12 @@ ActiveRecord::Schema.define(version: 20131216092303) do
     t.datetime "image_updated_at"
   end
 
+  create_table "t_shirts", force: true do |t|
+    t.string   "title"
+    t.integer  "tshirt_id"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
 end

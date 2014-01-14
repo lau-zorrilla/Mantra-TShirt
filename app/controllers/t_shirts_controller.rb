@@ -28,7 +28,7 @@ class TShirtsController < ApplicationController
 
     respond_to do |format|
       if @t_shirt.save
-        format.html { redirect_to @t_shirt, notice: 'T shirt was successfully created.' }
+        format.html { redirect_to @t_shirt }
         format.json { render action: 'show', status: :created, location: @t_shirt }
       else
         format.html { render action: 'new' }
@@ -42,7 +42,7 @@ class TShirtsController < ApplicationController
   def update
     respond_to do |format|
       if @t_shirt.update(t_shirt_params)
-        format.html { redirect_to @t_shirt, notice: 'T shirt was successfully updated.' }
+        format.html { redirect_to @t_shirt }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }

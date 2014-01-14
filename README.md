@@ -2,4 +2,4 @@ Mantra-TShirt
 =============
 
 
-This is a website to spread loving ideas throughout the world
+A website that spreads love ideas throughout the world
